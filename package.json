@@ -1,0 +1,21 @@
+{
+  "name": "gulp-imgsizefix",
+  "version": "0.0.0",
+  "description": "fix the img size",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp --gulpfile test/gulpfile.js"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "AtuyL",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-rename": "^1.2.0"
+  },
+  "dependencies": {
+    "imagesize": "^1.0.0"
+  }
+}
