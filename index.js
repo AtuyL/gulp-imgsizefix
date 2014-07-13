@@ -18,7 +18,6 @@ function imgsizefix(options) {
   options = options || {};
   var paths = options.paths || null;
   return function (file, encoding, callback) {
-    console.log(file.path, encoding);
     var
       tag, imgdata, src, result, parser,
       html = file.contents.toString(),
@@ -76,7 +75,6 @@ function imgsizefix(options) {
 
       src = REG.lazy.exec(tag) || REG.src.exec(tag);
       src = src ? resolve(src[1]) : null;
-      console.log("src:", src);
 
       if (src === null) {
         html = html.replace(tag, cancel(tag));
@@ -101,12 +99,11 @@ function imgsizefix(options) {
       }
     }
 
-    while (each()) {
-      console.log(tag);
+    while (true) {
+      if (!each()) {
+        break;
+      }
     }
-
-    console.log(file.path);
-    console.log(html);
 
     file.contents = new Buffer(html);
     callback(null, file);
