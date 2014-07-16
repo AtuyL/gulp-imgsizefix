@@ -1,13 +1,14 @@
 {
   "name": "gulp-imgsizefix",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Fix the IMG tags size (width and height) attributes.",
   "main": "index.js",
   "scripts": {
     "test": "gulp --gulpfile test/gulpfile.js"
   },
   "keywords": [
-    "gulp"
+    "gulp",
+    "gulpplugin"
   ],
   "author": "AtuyL",
   "license": "ISC",
