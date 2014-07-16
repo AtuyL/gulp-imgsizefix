@@ -7,10 +7,10 @@ var
   Parser = require('imagesize').Parser,
   REG = {
     // tag: new RegExp("<\\s*img[^>]*\\s+(width|height)(\\s*)=(\\s*)[\"\']\\$[\"\'][^>]*>", "im"),
-    tag: new RegExp("<\\s*img[^>]*\\s+(width|height)(?:\\s*=\\s*([\"\'])\\$[\"\'])?([\\s>])", "im"),
+    tag: new RegExp("<\\s*img[^>]*\\s+(width|height)(?:\\s*=\\s*([\"\'])\\$[\"\'])?([\\s\\/>])", "im"),
     src: new RegExp("\\s+src\\s*=\\s*[\"\']([^\"\']+)[\"\']", "im"),
     lazy: new RegExp("\\s+data-lazy\\s*=\\s*[\"\']([^\"\']+)[\"\']", "im"),
-    size: new RegExp("(\\s+)(width|height)(?:\\s*=\\s*([\"\'])\\$[\"\'])?([\\s>])", "im"),
+    size: new RegExp("(\\s+)(width|height)(?:\\s*=\\s*([\"\'])\\$[\"\'])?([\\s\\/>])", "im"),
     abspath: new RegExp("^(?:https?:\/)?\/", "im")
   };
 
