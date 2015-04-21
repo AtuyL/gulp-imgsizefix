@@ -103,15 +103,15 @@ gulp.task("default", function () {
 ### Output
 ```html
 <!-- absolute path -->
-<img src="/img/128x64.gif" width="128">
-<img src="/img/128x64.gif" height="64">
+<img src="/img/128x64.gif" width="128" height="64">
+<img src="/img/128x64.gif" width="128" height="64">
 <img src="/img/128x64.gif" width="128" height="64">
 <!-- remote path -->
-<img src="http://example.com/img/128x64.gif" width="128">
-<img src="http://example.com/img/128x64.gif" height="64">
+<img src="http://example.com/img/128x64.gif" width="128" height="64">
+<img src="http://example.com/img/128x64.gif" width="128" height="64">
 <img src="http://example.com/img/128x64.gif" width="128" height="64">
 <!-- relative path -->
-<img src="./img/128x64.gif" width="128">
-<img src="./img/128x64.gif" height="64">
+<img src="./img/128x64.gif" width="128" height="64">
+<img src="./img/128x64.gif" width="128" height="64">
 <img src="./img/128x64.gif" width="128" height="64">
 ```
